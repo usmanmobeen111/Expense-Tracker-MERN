@@ -184,6 +184,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ and lots of ☕ by [Usman Mobeen]
+Made with ❤️ and lots of ☕ by Usman Mobeen
 
 ⭐ Star this repo if you found it helpful!
