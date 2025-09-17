@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+
+  .gradient-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  }
+
+  .gradient-button {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  .animate-bounce-in {
+    animation: bounceIn 0.6s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
